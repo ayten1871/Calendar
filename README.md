@@ -11,7 +11,8 @@
 -   But show all tour group in orders when view in row version.
 -   Highlight selected day with yellow background and green border.
 -   Show "成行" in orange background color and white font color if the tour group is guaranteed trip.
-    -Transform number of price into currency format.
+-   Transform number of price into currency format.
+-   Styled-component
 
 ---
 
@@ -65,3 +66,8 @@ const ModuleDefaults = {
 ]
 
 ```
+
+
+## Library
+- date-fns
+- styled-components
