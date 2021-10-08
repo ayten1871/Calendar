@@ -1,0 +1,9 @@
+export const green = '#24a07c';
+export const red = '#e10500';
+export const blue = '#0077b3';
+export const orange = '#fe8400';
+export const grey = '#666';
+export const light = '#949494';
+export const khaki = '#EDE9DD';
+export const lime = '#66bb3c';
+export const lemon = '#FFFBC9';

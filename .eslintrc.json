@@ -1,0 +1,38 @@
+{
+    "env": { "jquery": true }, // 支援使用 jquery
+    "parser": "@typescript-eslint/parser",
+    "extends": [
+        "eslint-config-alloy/react",
+        "eslint:recommended",
+        "plugin:react/recommended",
+        "plugin:@typescript-eslint/eslint-recommended"
+    ],
+    "plugins": ["react", "@typescript-eslint", "react-hooks"],
+    "rules": {
+        /** 0:off, 1:warn, 2:error */
+        "no-void": 1, // 禁止使用 void 運算子
+        "no-unused-vars": 1, // 禁止未被使用的變數
+        "array-callback-return": 1, // array 中有回傳值的方法都該寫 return
+        "space-before-function-paren": 0, // 函數括號前要有空格
+        "no-console": 0, // 禁用 console
+        "no-useless-escape": 0, // 禁止使用不必要的跳脫字元
+        "no-case-declarations": 1, // 禁止在 switch case 中定義變數，除非用大括號包起
+        "react/sort-comp": 0, // 控制 React.createClass 內部函式的排序
+        "react/no-did-update-set-state": 0, // 禁止在 componentDidUpdate 中 setState
+        "react/prop-types": 0, // 禁止使用未在 propTypes 定義的 props
+        "react/no-unescaped-entities": 0, // 禁止在 text 區塊中使用 jsx 語法符號(ex: >, }, ", ' 等)
+        "react-hooks/rules-of-hooks": 1, // 檢查 Hook 的規則
+        "react-hooks/exhaustive-deps": 1, // 檢查 effect 的相依性
+          // note you must disable the base rule as it can report incorrect errors
+        "no-use-before-define": "off",
+        "@typescript-eslint/no-use-before-define": ["error"]
+    },
+    "settings": {
+        "react": {
+            "version": "detect"
+        }
+    },
+    "globals": {
+        "$": true
+    }
+}
